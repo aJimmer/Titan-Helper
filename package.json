@@ -1,0 +1,29 @@
+{
+  "name": "find-a-titan",
+  "version": "1.0.0",
+  "description": "CSUF map to find realtime directions",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aJimmer/362-tuffy-app.git"
+  },
+  "author": "362 team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aJimmer/362-tuffy-app/issues"
+  },
+  "homepage": "https://github.com/aJimmer/362-tuffy-app#readme",
+  "dependencies": {
+    "express": "~4.9.1",
+    "nodemon": "^1.10.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.9.3",
+    "express": "~4.10.3",
+    "jsonwebtoken": "^7.1.9",
+    "mongoose": "~3.8.19.6.1",
+    "morgan": "~1.5.0"
+  }
+}
