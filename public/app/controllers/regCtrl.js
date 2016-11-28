@@ -7,7 +7,7 @@ angular.module('regCtrl',['registerService'])
 		console.log(vm.regData);
 		vm.processing = true;
 
-		/// clear error
+		/// clear error 
 		vm.error = '';
 		vm.message = '';
 

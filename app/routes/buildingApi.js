@@ -11,13 +11,14 @@ module.exports = function(app, express){
 	buildingApi.route('/buildings')
 		.post(function(req, res) {
 			var building = new Building();
+			var room = new Object();
 
 			building.name = req.body.name;
 			building.floors = req.body.floors;
-			/*building.rooms.roomNum = req.body.roomNum;
-			building.rooms.path = req.body.path.split(' ').map(Number);
-			//building.rooms.room 	
-			*/
+			room.roomNum = req.body.roomNum;
+			room.path = req.body.path.split(' ').map(Number);
+			building.rooms.push(room);
+
 			building.save(function(err) {
 				if(err) res.send(err);
 
@@ -40,16 +41,13 @@ module.exports = function(app, express){
 
 				if(req.body.name) building.name = req.body.name;
 				if(req.body.floors) building.floors = req.body.floors;
-				/*if(req.body.roomNum && req.body.path) {
-					var room = {
-						req.body.roomNum,
-						req.body.path.split(' ').map(Number);
+				if(req.body.roomNum && req.body.path) {
+					var room = new Object();
 
-					}
+					room.roomNum = req.body.roomNum;
+					room.path = req.body.path.split(' ').map(Number);
 					building.rooms.push(room);
-					//building.rooms.roomNum = req.body.roomNum;
-				}*/
-				//if(req.body.path) building.rooms.path = req.body.path.split(' ').map(Number);
+				}
 
 				building.save(function(err) {
 					if (err) res.send(err);

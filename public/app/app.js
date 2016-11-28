@@ -10,9 +10,12 @@ angular.module('find-a-titan', [
 	'dashboardCtrl',
 	'mapCtrl',
 	'mapService',
-	'todolistCtrl'
+	'todolistCtrl',
+	'feedCtrl',
+	'weatherCtrl',
+	'faqCtrl',
+	'mainDashCtrl' 
 	])
-
 	// application configuration to integrate token into requests
 	.config(function($httpProvider){
 		// attach our auth interceptor to the http requests

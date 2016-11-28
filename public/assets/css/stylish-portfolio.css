@@ -6,12 +6,24 @@
 
 /* Global Styles */
 
+.jumbotron {
+    color: inherit;
+    background-color: rgba(245, 245, 245, 0.48);   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.img-responsive {
+    width: 75%;
+}
+h3{
+    font-size: 50px;
+}
+
 /* ANIMATIONS ====================== */ 
 .spinner {
   animation:spin 1s infinite;
   -webkit-animation:spin 1s infinite;
   -moz-animation:spin 1s infinite;
-}
+}`
 
 @keyframes spin {
     from { transform:rotate(0deg); } 
@@ -278,3 +290,23 @@ footer {
     position: relative;
 }
 
+/* sliders */
+
+.ng-enter, .ng-leave {
+    width: 100%; 
+    position: relative;
+}
+
+/*
+.ng-enter {
+    -webkit-animation:slideInLeft 1.2s both ease-in;
+    -moz-animation:slideInLeft 1.2s both ease-in;
+    animation:slideInLeft 1.2s both ease-in;
+}
+
+.ng-leave { 
+    -webkit-animation:slideOutRight 0.5s both ease-in; 
+    -moz-animation:slideOutRight 0.5s both ease-in;
+    animation:slideOutRight 0.5s both ease-in;
+}
+*/

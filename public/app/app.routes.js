@@ -21,7 +21,7 @@ angular.module('routerRoutes', ['ngRoute'])
 		})
 		.when('/dashboard', {
 			templateUrl: 'app/views/pages/dashboard.html',
-			controller: 'dashboardController',
+			controller: 'mapController',
 			controllerAs: 'dashboard'
 		})
 		.when('/about', {
@@ -43,6 +43,26 @@ angular.module('routerRoutes', ['ngRoute'])
 			templateUrl: 'app/views/pages/toDoList.html',
 			controller: 'todolistController',
 			controllerAs: 'todolist'
+		})
+		.when('/feed', {
+			templateUrl: 'app/views/pages/feed.html',
+			controller: 'feedController',
+			controllerAs: 'feed'
+		})
+		.when('/weather', {
+			templateUrl: 'app/views/pages/weather.html',
+			controller: 'weatherController',
+			controllerAs: 'weather'
+		})
+		.when('/faq',{
+			templateUrl:'app/views/pages/faq.html',
+			controller: 'faqController',
+			controllerAs: 'faq'
+		})
+		.when('/mainDashboard',{
+			templateUrl: 'app/views/pages/mainDash.html',
+			controller: 'mainDashController',
+			controllerAs: 'mainDash'
 		});
 
 		// set our app up to have pretty URLS

@@ -3,7 +3,7 @@ angular.module('todolistCtrl',[])
 		return {
 			restrict: 'E',
 			replace: true,
-			template: '<div class="todolist"><input id="task" type="text" placeholder="task"><button id="add">Add Task</button><div id ="lines"></div></div>'
+			template: '<div class="todolist"><input id="task" type="text" placeholder="Add a task..."><br><br><div id ="lines"></div><br><button id="add" class="btn btn-dark btn-lg">Add Task</button></div>'
 
 		}
 	})

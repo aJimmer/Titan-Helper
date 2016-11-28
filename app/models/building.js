@@ -4,16 +4,11 @@ var Schema = mongoose.Schema;
 var BuildingSchema = new Schema({
 	name: String,
 	floors: Number,
-	/*rooms : 
+	rooms : 
 			[{
 				roomNum: String,
 				path: [Number]
 			}]
-	
-	/*rooms: [room = {
-		roomNum : String,
-		path:[Number]
-	}]*/
 });
 
 BuildingSchema.pre('save', function(next) {

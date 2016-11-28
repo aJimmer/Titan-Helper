@@ -31,4 +31,4 @@ angular.module('userService', [])
 
 		// return user factory object
 		return userFactory;
-	});
+	}); 

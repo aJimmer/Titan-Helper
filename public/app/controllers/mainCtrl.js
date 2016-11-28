@@ -16,11 +16,13 @@ angular.module('mainCtrl', [])
 
 	// define a list of items
 	vm.menu = [
-		{ href: '/', icon : 'fa fa-street-view', title: 'Find-a-Titan' },
-		{ href: '/dashboard', icon : 'fa fa-home', title: ' Home' },
-		{ href: '/map', icon : 'fa fa-location-arrow', title: 'Map' },
+		{ icon : 'fa fa-street-view', title: 'Find-a-Titan' },
+		{ href: '/mainDashboard', icon : 'fa fa-home', title: ' Home' },
+		{ href: '/dashboard', icon : 'fa fa-location-arrow', title: 'Map' },
 		{ href: '/todolist', icon : 'fa fa-shield', title: ' To Do List' },
-		{ href: '/contact', icon : 'fa fa-comment', title: ' Contact'}
+		{ href: '/feed', icon : 'fa fa-twitter', title: 'Feed'},
+		{ href: '/weather', icon : 'fa fa-sun-o', title: 'Weather'},
+		{ href: '/faq', icon: 'fa fa-question-circle', title: 'FAQ'}
 	];
 
 	//get info if a person is logged in
@@ -53,7 +55,7 @@ angular.module('mainCtrl', [])
 				// if user successfully logs in, redirect to users page
 				if(data.success) {
 					console.log('go to home page..');
-					$location.path('/dashboard');
+					$location.path('/mainDashboard');
 				}
 				else {
 					vm.error = data.message;
