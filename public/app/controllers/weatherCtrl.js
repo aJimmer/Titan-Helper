@@ -14,7 +14,7 @@ angular.module('weatherCtrl',[])
 		  getLocation();
 
 		  function getLocation() {
-		    $.get("http://ipinfo.io", function(location) {
+		    $.get("https://ipinfo.io", function(location) {
 		      console.log(location);
 		      $('.location').append("Fullerton, ").append("California");
 		      getWeather("33.880625,-117.886072;");
