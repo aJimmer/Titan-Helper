@@ -27,7 +27,7 @@ angular.module('weatherCtrl',[])
 		    //var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=9caef11b776d4c210cca3f8ebeba530c&units=" + unitDefault;
 		    var API_KEY = "c86054163208f8a793a32241fc40b145";
 
-		    var weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5351247" + "&appid=" + API_KEY + "&units=imperial";
+		    var weatherApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=5351247" + "&appid=" + API_KEY + "&units=imperial";
 		    console.log(weatherApiUrl);
 
 		    $.get(weatherApiUrl, function(weather) {
