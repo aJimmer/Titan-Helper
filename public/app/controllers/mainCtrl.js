@@ -13,6 +13,7 @@ angular.module('mainCtrl', [])
 	vm.welcome = 'Welcome to Find-a-Titan';
 	vm.message = 'Helping you find your way...';
 	vm.checkMap = 'Get directions';
+	vm.alert = 'hide';
 
 	// define a list of items
 	vm.menu = [
@@ -72,5 +73,7 @@ angular.module('mainCtrl', [])
 		console.log('logging out...');
 		vm.user = {};
 		$location.path('/login');
+
+		vm.alert = 'show';
 	};
 });

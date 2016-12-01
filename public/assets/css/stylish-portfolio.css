@@ -168,6 +168,12 @@ hr.small {
     right: 0;
 }
 
+#menu-toggle2 {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+}
+
 #sidebar-wrapper.active {
     right: 250px;
     width: 250px;
@@ -182,6 +188,9 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
+.toggle2 {
+    margin: 5px 5px 0 5px;
+}
 /* Header */
 
 .header {

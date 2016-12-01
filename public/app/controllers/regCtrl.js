@@ -1,7 +1,7 @@
 angular.module('regCtrl',['registerService'])
 .controller('registerController', function(Register) {
 	var vm = this;
-
+	vm.alert = 'hide';
 	vm.doRegister = function() {
 		console.log('Trying to register...');
 		console.log(vm.regData);
@@ -17,6 +17,7 @@ angular.module('regCtrl',['registerService'])
 
 				vm.regData = {};
 				vm.message = data.message;
+				vm.alert = 'show';
 			});
 	};
 });

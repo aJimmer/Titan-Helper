@@ -1,16 +1,25 @@
 
+
 <div class="row col-sm-6 col-sm-offset-3"> 
+
     <div class="jumbotron">
-        <h3> {{ dashboard.message }} </h3>
-        <br>
-         <form ng-submit="dashboard.findRoute()" class="container form-vertical" ">    
-            <input type="text" class="form-control" placeholder="Room number" ng-model= "dashboard.destination.roomNumber">
+        <div>
+            <h3> {{ dashboard.message }} </h3>
             <br>
-            <input type="text" class="form-control" placeholder="Floor number" ng-model= "dashboard.destination.floorNumber">
-            <br>
-            <input type="text" class="form-control" placeholder="Building" ng-model = "dashboard.destination.building">
-            <br>
-            <input type="submit" class="btn btn-dark btn-lg" value="{{ dashboard.checkMap }}"> 
-        </form>
+             <form ng-submit="dashboard.findRoute()" class="container form-vertical" ">    
+                <select id="" class="form-control" ng-model= "dashboard.destination.roomNumber">
+                    <option>102A</option>
+                    <option>108</option>
+                    <option>109A</option>
+                    <option>110A</option>
+                </select>
+                <br>
+                <input type="text" class="form-control" placeholder="Floor number" ng-model= "dashboard.destination.floorNumber">
+                <br>
+                <input type="text" class="form-control" placeholder="Building" ng-model = "dashboard.destination.building">
+                <br>
+                <input type="submit" class="btn btn-dark btn-lg" value="{{ dashboard.checkMap }}"> 
+            </form>
+        </div>
     </div> 
 </div>
