@@ -27,7 +27,7 @@ angular.module('weatherCtrl',[])
 		    //var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=9caef11b776d4c210cca3f8ebeba530c&units=" + unitDefault;
 		    var API_KEY = "c86054163208f8a793a32241fc40b145";
 
-		    var weatherApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=5351247" + "&appid=" + API_KEY + "&units=imperial";
+		    var weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?id=5351247" + "&appid=" + API_KEY + "&units=imperial";
 		    console.log(weatherApiUrl);
 
 		    $.get(weatherApiUrl, function(weather) {
@@ -38,7 +38,7 @@ angular.module('weatherCtrl',[])
 		      var wind = (weather.wind.speed).toFixed(1);
 		      var iconNum = weather.weather[0].icon;
 
-		      $('.icon').append("<img src='http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>");
+		      $('.icon').append("<img src='https://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>");
 		      $('.btn2').html(temperature + '\xB0 F');
 
 		      $('.humidity').append(humidity + '%');
