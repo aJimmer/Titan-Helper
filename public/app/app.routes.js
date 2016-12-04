@@ -63,6 +63,16 @@ angular.module('routerRoutes', ['ngRoute'])
 			templateUrl: 'app/views/pages/mainDash.html',
 			controller: 'mainDashController',
 			controllerAs: 'mainDash'
+		})
+		.when('/profile',{
+			templateUrl: 'app/views/pages/profile.html',
+			controller: 'profileController',
+			controllerAs: 'profile'
+		})
+		.when('/floorDirectory', {
+			templateUrl: 'app/views/pages/floorDirectory.html',
+			controller: 'floorDirectoryController',
+			controllerAs: 'floorDirectory'
 		});
 
 		// set our app up to have pretty URLS

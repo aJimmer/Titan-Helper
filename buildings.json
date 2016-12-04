@@ -1,0 +1,47 @@
+{
+    "_id" : ObjectId("582e7759f98fad2839bd9ac7"),
+    "name" : "Computer Science",
+    "rooms" : [ 
+        {
+            "roomNum" : "110A",
+            "_id" : ObjectId("582e7759f98fad2839bd9ac8"),
+            "path" : [ 
+                325, 
+                187, 
+                280, 
+                187
+            ]
+        }, 
+        {
+            "roomNum" : "109A",
+            "_id" : ObjectId("582e7841d8f0cd7b392c61c2"),
+            "path" : [ 
+                325, 
+                235, 
+                350, 
+                235
+            ]
+        }, 
+        {
+            "roomNum" : "108",
+            "_id" : ObjectId("582e7897d8f0cd7b392c61c3"),
+            "path" : [ 
+                325, 
+                240, 
+                280, 
+                240
+            ]
+        }, 
+        {
+            "roomNum" : "102A",
+            "_id" : ObjectId("582e78d9d8f0cd7b392c61c4"),
+            "path" : [ 
+                325, 
+                515, 
+                280, 
+                515
+            ]
+        }
+    ],
+    "__v" : 3
+}

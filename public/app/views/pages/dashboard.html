@@ -7,16 +7,20 @@
             <h3> {{ dashboard.message }} </h3>
             <br>
              <form ng-submit="dashboard.findRoute()" class="container form-vertical" ">    
-                <select id="" class="form-control" ng-model= "dashboard.destination.roomNumber">
+                <label for="singleSelect"> Building: </label><br>
+                <select id="102A" class="form-control" ng-model= "dashboard.destination.building">
+                    <option value="">---Please select---</option> 
+                    <option>Computer Science</option>
+                </select>
+                <br>
+                <label for="singleSelect"> Room: </label><br>
+                <select id="102A" class="form-control" ng-model= "dashboard.destination.roomNumber">
+                    <option value="">---Please select---</option> 
                     <option>102A</option>
                     <option>108</option>
                     <option>109A</option>
                     <option>110A</option>
                 </select>
-                <br>
-                <input type="text" class="form-control" placeholder="Floor number" ng-model= "dashboard.destination.floorNumber">
-                <br>
-                <input type="text" class="form-control" placeholder="Building" ng-model = "dashboard.destination.building">
                 <br>
                 <input type="submit" class="btn btn-dark btn-lg" value="{{ dashboard.checkMap }}"> 
             </form>

@@ -190,23 +190,15 @@ module.exports = function(app, express){
 		});
 	});
 
-	// test route to make sure everything is working 
-	// (accessed at GET http://localhost:3000/api)
-
-	apiRouter.get('/', function(req, res) {
-		res.json({message: 'hooray! welcome to our api' });
-	});
-
-	// more routes for our API will happen here
-
 	// middleware to use for all requests
 	apiRouter.use(function(req, res, next) {
 		var token = req.body.token || req.query.token || req.headers['x-access-token'];
-
+		console.log('Saving user info for future use...');
 		// decode token
 		if(token) {
 			// verify secret and checks exp
 			jwt.verify(token, superSecret, function(err, decoded) {
+				console.log('decoded: ' + decoded.name);
 				if(err) {
 					return res.status(403).send({
 						sucess: false,
@@ -214,6 +206,7 @@ module.exports = function(app, express){
 					});
 				} else {
 					// if everything is good, save to request for use in other routes
+					console.log('We hit here...');
 					req.decoded = decoded;
 
 					next();
@@ -228,6 +221,20 @@ module.exports = function(app, express){
 			});
 		}
 	});
+	// test route to make sure everything is working 
+	// (accessed at GET http://localhost:3000/api)
+
+	apiRouter.get('/', function(req, res) {
+		res.json({message: 'hooray! welcome to our api' });
+	});
+
+	apiRouter.get('/me',function(req,res) {
+		console.log('Getting user info...');
+		res.send(req.decoded._doc);
+	});
+	// more routes for our API will happen here
+
+
 
 	return apiRouter;
 };

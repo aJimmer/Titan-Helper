@@ -14,7 +14,7 @@ angular.module('weatherCtrl',[])
 		  getLocation();
 
 		  function getLocation() {
-		    $.get("https://ipinfo.io", function(location) {
+		    $.get("http://ipinfo.io", function(location) {
 		      console.log(location);
 		      $('.location').append("Fullerton, ").append("California");
 		      getWeather("33.880625,-117.886072;");
@@ -38,7 +38,7 @@ angular.module('weatherCtrl',[])
 		      var wind = (weather.wind.speed).toFixed(1);
 		      var iconNum = weather.weather[0].icon;
 
-		      $('.icon').append("<img src='https://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>");
+		      $('.icon').append("<img src='http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>");
 		      $('.btn2').html(temperature + '\xB0 F');
 
 		      $('.humidity').append(humidity + '%');

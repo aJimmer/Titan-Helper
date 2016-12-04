@@ -23,7 +23,8 @@ angular.module('mainCtrl', [])
 		{ href: '/todolist', icon : 'fa fa-shield', title: ' To Do List' },
 		{ href: '/feed', icon : 'fa fa-twitter', title: 'Feed'},
 		{ href: '/weather', icon : 'fa fa-sun-o', title: 'Weather'},
-		{ href: '/faq', icon: 'fa fa-question-circle', title: 'FAQ'}
+		{ href: '/faq', icon: 'fa fa-question-circle', title: 'FAQ'},
+		{ href: '/floorDirectory', icon: 'fa fa-compass', title: 'Floor Directory' }
 	];
 
 	//get info if a person is logged in
