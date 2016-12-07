@@ -17,7 +17,7 @@ angular.module('mainCtrl', [])
 
 	// define a list of items
 	vm.menu = [
-		{ icon : 'fa fa-street-view', title: 'Find-a-Titan' },
+		{ href: '/mainDashboard',icon : 'fa fa-street-view', title: 'Find-a-Titan' },
 		{ href: '/mainDashboard', icon : 'fa fa-home', title: ' Home' },
 		{ href: '/dashboard', icon : 'fa fa-location-arrow', title: 'Map' },
 		{ href: '/todolist', icon : 'fa fa-shield', title: ' To Do List' },
