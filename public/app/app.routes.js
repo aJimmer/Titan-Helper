@@ -71,7 +71,7 @@ angular.module('routerRoutes', ['ngRoute'])
 		})
 		.when('/floorDirectory', {
 			templateUrl: 'app/views/pages/floorDirectory.html',
-			controller: 'floorDirectoryController',
+			controller: 'floorDirectController',
 			controllerAs: 'floorDirectory'
 		});
 

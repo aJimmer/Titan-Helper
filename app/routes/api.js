@@ -198,7 +198,6 @@ module.exports = function(app, express){
 		if(token) {
 			// verify secret and checks exp
 			jwt.verify(token, superSecret, function(err, decoded) {
-				console.log('decoded: ' + decoded.name);
 				if(err) {
 					return res.status(403).send({
 						sucess: false,

@@ -30,4 +30,4 @@
 
 - `node server.js` to launch on localhost:3000
 
-- Open up google chrome and go to http://localhost:3000
+- Open up google chrome and go to http://localhost:3000f
