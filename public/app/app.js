@@ -16,7 +16,8 @@ angular.module('find-a-titan', [
 	'faqCtrl',
 	'mainDashCtrl',
 	'profileCtrl',
-	'floorDirectCtrl' 
+	'floorDirectCtrl',
+	'contactCtrl'
 	])
 	// application configuration to integrate token into requests
 	.config(function($httpProvider){

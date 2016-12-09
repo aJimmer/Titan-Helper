@@ -74,7 +74,6 @@ angular.module('routerRoutes', ['ngRoute'])
 			controller: 'floorDirectController',
 			controllerAs: 'floorDirectory'
 		});
-
 		// set our app up to have pretty URLS
 		$locationProvider.html5Mode(true);
 });

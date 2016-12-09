@@ -17,14 +17,16 @@ angular.module('mainCtrl', [])
 
 	// define a list of items
 	vm.menu = [
-		{ href: '/mainDashboard',icon : 'fa fa-street-view', title: 'Find-a-Titan' },
+		{ href: '/mainDashboard', icon: 'fa fa-street-view', title: 'Find-a-Titan' },
 		{ href: '/mainDashboard', icon : 'fa fa-home', title: ' Home' },
 		{ href: '/dashboard', icon : 'fa fa-location-arrow', title: 'Map' },
 		{ href: '/todolist', icon : 'fa fa-shield', title: ' To Do List' },
 		{ href: '/feed', icon : 'fa fa-twitter', title: 'Feed'},
 		{ href: '/weather', icon : 'fa fa-sun-o', title: 'Weather'},
+		{ href: '/floorDirectory', icon: 'fa fa-compass', title: 'Floor Directory' },
 		{ href: '/faq', icon: 'fa fa-question-circle', title: 'FAQ'},
-		{ href: '/floorDirectory', icon: 'fa fa-compass', title: 'Floor Directory' }
+		{ href: '/contact', icon: 'fa fa-comments', title: 'Contact'}
+
 	];
 
 	//get info if a person is logged in
